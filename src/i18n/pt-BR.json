@@ -1,0 +1,86 @@
+{
+  "hero": {
+    "file": "// portfolio.ts",
+    "name": "Matheus T. Feltrin",
+    "role": "Full-Stack Developer",
+    "description": "Construindo sistemas backend escaláveis, APIs REST e pipelines de processamento de dados. Resolvendo problemas complexos com código limpo e eficiente.",
+    "techStack": "// tech stack",
+    "ctaPortfolio": "Ver Portfólio",
+    "ctaContact": "Entrar em Contato"
+  },
+  "nav": {
+    "home": "Início",
+    "about": "Sobre",
+    "portfolio": "Portifólio",
+    "contact": "Contato"
+  },
+  "about": {
+    "section": "about me",
+    "title": "README",
+    "intro": [
+      "Backend Engineer with 5+ years of experience",
+      "Specializing in scalable distributed systems"
+    ],
+    "p1": "Eu construo sistemas backend de <accent>alta performance</accent> usando <keyword>microserviços</keyword> e <number>APIs REST</number>.",
+    "p2": "With experience across Node.js, Go, and Python, I've delivered solutions handling millions of requests daily. I'm passionate about clean code, system design, and building developer-friendly tools.",
+    "expertise": [
+      "API Development",
+      "Database Optimization",
+      "Cloud Infrastructure",
+      "System Architecture"
+    ]
+  },
+  "contact": {
+    "subtitle": "// entre em contato",
+    "title": "contact",
+    "formHeader": "# Terminal Input",
+    "submit": "Enviar mensagem",
+    "socialHeader": "# Links sociais",
+    "fields": {
+      "name": {
+        "label": "nome:",
+        "placeholder": "seu_nome"
+      },
+      "email": {
+        "label": "email:",
+        "placeholder": "voce@email.com"
+      },
+      "message": {
+        "label": "mensagem:",
+        "placeholder": "Sua mensagem aqui..."
+      }
+    },
+    "availability": {
+      "title": "# Disponibilidade",
+      "text": "Atualmente disponível para freelas e oportunidades full-time. Tempo médio de resposta: ~24h"
+    }
+  },
+  "portfolio": {
+    "section": {
+      "index": "02.",
+      "comment": "trabalhos selecionados",
+      "title": "portfolio"
+    },
+    "actions": {
+      "code": "Código",
+      "live": "Live"
+    },
+    "projects": [
+      {
+        "id": 1,
+        "name": "api_gateway.ts",
+        "description": "Gateway de API de alta performance com rate limit, middleware de auth e roteamento. Suporta 10k+ req/s.",
+        "language": "Node.js",
+        "tags": ["Express", "Redis", "JWT"]
+      },
+      {
+        "id": 2,
+        "name": "data_pipeline.go",
+        "description": "Pipeline de processamento em tempo real com workers concorrentes. Processa milhões de eventos por dia.",
+        "language": "Go",
+        "tags": ["Kafka", "MongoDB", "gRPC"]
+      }
+    ]
+  }
+  
+}
