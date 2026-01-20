@@ -18,7 +18,7 @@ export function HeroSection() {
     <section className="min-h-screen flex items-center justify-center px-4 py-16 pt-24">
       <div className="w-full max-w-6xl">
         <div className="flex flex-col md:flex-row md:items-center md:gap-12">
-          <div className="flex-1 font-mono">
+          <div className="flex-1 font-mono order-1">
             {/* Code header */}
             <div className="mb-10">
               <div className="text-sm mb-2" style={{ color: colors.comment }}>
@@ -70,6 +70,11 @@ export function HeroSection() {
             >
               {t('hero.description')}
             </p>
+
+            {/* PHOTO – tablet only */}
+            <div className="sm:flex md:hidden justify-center mb-10">
+              <PhotoFrame />
+            </div>
 
             {/* Tech stack */}
             <div className="mb-12">
@@ -133,7 +138,8 @@ export function HeroSection() {
             </div>
           </div>
 
-          <div className="hidden md:block md:w-80">
+          {/* RIGHT / PHOTO – desktop only */}
+          <div className="hidden md:flex md:w-80 md:justify-center order-2">
             <PhotoFrame />
           </div>
         </div>
