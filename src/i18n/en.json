@@ -3,11 +3,11 @@
     "file": "// portfolio.ts",
     "name": "Matheus T. Feltrin",
     "role": "Full-Stack Developer",
-    "description": "Building scalable backend systems, RESTful APIs, and data processing pipelines. Solving complex problems with clean and efficient code.",
-    "techStack": "// tech stack",
+    "description": "Building modern applications, robust APIs, and high-quality interfaces. 7+ years crafting scalable systems with clean, well-architected code.",
+    "techStack": "// Tech Stack",
     "ctaPortfolio": "View Portfolio",
     "ctaContact": "Contact Me"
-  },  
+  },
   "nav": {
     "home": "Home",
     "about": "About",
@@ -18,16 +18,16 @@
     "section": "about me",
     "title": "README",
     "intro": [
-      "Backend Engineer with 5+ years of experience",
-      "Specializing in scalable distributed systems"
+      "Full-Stack Developer with 7+ years of experience",
+      "Focused on software architecture and scalable systems"
     ],
-    "p1": "I build <accent>high-performance</accent> backend systems using <keyword>microservices</keyword> and <number>RESTful APIs</number>.",
-    "p2": "With experience across Node.js, Go, and Python, I've delivered solutions handling millions of requests daily. I'm passionate about clean code, system design, and building developer-friendly tools.",
+    "p1": "I build <accent>complete full-stack applications</accent> with a strong focus on <keyword>clean architecture</keyword>, <number>TDD</number>, and proper separation of concerns.",
+    "p2": "With hands-on experience in Node.js, TypeScript, React, Vue, and Go, I develop everything from robust APIs with NestJS and Prisma to modern interfaces and mobile apps with React Native. I care deeply about code quality, maintainability, and the long-term evolution of systems.",
     "expertise": [
-      "API Development",
-      "Database Optimization",
-      "Cloud Infrastructure",
-      "System Architecture"
+      "Software Architecture",
+      "REST APIs & NestJS",
+      "React, Vue & React Native",
+      "TypeScript & Go"
     ]
   },
   "contact": {

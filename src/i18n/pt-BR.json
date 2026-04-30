@@ -3,31 +3,31 @@
     "file": "// portfolio.ts",
     "name": "Matheus T. Feltrin",
     "role": "Full-Stack Developer",
-    "description": "Construindo sistemas backend escaláveis, APIs REST e pipelines de processamento de dados. Resolvendo problemas complexos com código limpo e eficiente.",
-    "techStack": "// tech stack",
+    "description": "Desenvolvendo aplicações modernas, APIs robustas e interfaces de alta qualidade. Mais de 7 anos construindo sistemas escaláveis com código limpo e bem arquitetado.",
+    "techStack": "// Tech Stack",
     "ctaPortfolio": "Ver Portfólio",
     "ctaContact": "Entrar em Contato"
   },
   "nav": {
     "home": "Início",
     "about": "Sobre",
-    "portfolio": "Portifólio",
+    "portfolio": "Portfólio",
     "contact": "Contato"
   },
   "about": {
-    "section": "about me",
+    "section": "Sobre mim",
     "title": "README",
     "intro": [
-      "Backend Engineer with 5+ years of experience",
-      "Specializing in scalable distributed systems"
+      "Full-Stack Developer com +7 anos de experiência",
+      "Especialista em arquitetura de software e sistemas escaláveis"
     ],
-    "p1": "Eu construo sistemas backend de <accent>alta performance</accent> usando <keyword>microserviços</keyword> e <number>APIs REST</number>.",
-    "p2": "With experience across Node.js, Go, and Python, I've delivered solutions handling millions of requests daily. I'm passionate about clean code, system design, and building developer-friendly tools.",
+    "p1": "Construo aplicações <accent>full-stack completas</accent> com foco em <keyword>arquitetura limpa</keyword>, <number>TDD</number> e desacoplamento entre camadas.",
+    "p2": "Com experiência em Node.js, TypeScript, React, Vue e Go, desenvolvo desde APIs robustas com NestJS e Prisma até interfaces modernas e aplicações mobile com React Native. Tenho forte preocupação com qualidade, manutenibilidade e evolução contínua dos sistemas.",
     "expertise": [
-      "API Development",
-      "Database Optimization",
-      "Cloud Infrastructure",
-      "System Architecture"
+      "Arquitetura de Software",
+      "APIs REST & NestJS",
+      "React, Vue & React Native",
+      "TypeScript & Go"
     ]
   },
   "contact": {
@@ -82,5 +82,4 @@
       }
     ]
   }
-  
 }

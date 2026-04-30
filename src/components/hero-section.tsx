@@ -15,7 +15,10 @@ export function HeroSection() {
   const { t } = useTranslation();
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 py-16 pt-24">
+    <section
+      id="home"
+      className="min-h-screen flex items-center justify-center px-4 py-16 pt-24"
+    >
       <div className="w-full max-w-6xl">
         <div className="flex flex-col md:flex-row md:items-center md:gap-12">
           <div className="flex-1 font-mono order-1">
@@ -83,17 +86,21 @@ export function HeroSection() {
               </div>
 
               <div className="flex flex-wrap gap-3">
-                <TechBadge color="comment">
-                  <FaNodeJs />
-                  <span>Node.js</span>
-                </TechBadge>
                 <TechBadge color="accent">
                   <BiLogoTypescript />
                   <span>TypeScript</span>
                 </TechBadge>
+                <TechBadge color="comment">
+                  <FaNodeJs />
+                  <span>Node.js</span>
+                </TechBadge>
                 <TechBadge color="keyword">
                   <FaReact />
                   <span>React</span>
+                </TechBadge>
+                <TechBadge color="string">
+                  <FaReact />
+                  <span>React Native</span>
                 </TechBadge>
                 <TechBadge color="accent">
                   <FaGolang />
