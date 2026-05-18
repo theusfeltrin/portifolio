@@ -68,17 +68,11 @@
     "projects": [
       {
         "id": 1,
-        "name": "api_gateway.ts",
-        "description": "Gateway de API de alta performance com rate limit, middleware de auth e roteamento. Suporta 10k+ req/s.",
-        "language": "Node.js",
-        "tags": ["Express", "Redis", "JWT"]
-      },
-      {
-        "id": 2,
-        "name": "data_pipeline.go",
-        "description": "Pipeline de processamento em tempo real com workers concorrentes. Processa milhões de eventos por dia.",
-        "language": "Go",
-        "tags": ["Kafka", "MongoDB", "gRPC"]
+        "name": "Think In Software",
+        "description": "Site institucional de uma empresa prestadora de servicos tech.",
+        "language": "React.JS",
+        "tags": ["TypeScript", "Tailwind", "Vite", "i18n"],
+        "liveLink": "https://think-in-software.vercel.app/"
       }
     ]
   }

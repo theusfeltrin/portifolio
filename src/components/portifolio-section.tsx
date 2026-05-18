@@ -136,6 +136,7 @@ function ProjectCard({ project }: ProjectCardProps) {
         <ActionButton
           icon={<FaArrowUpRightFromSquare />}
           label={t('portfolio.actions.live')}
+          link={t('portfolio.actions.liveLink')}
         />
       </div>
     </div>
@@ -145,17 +146,20 @@ function ProjectCard({ project }: ProjectCardProps) {
 function ActionButton({
   icon,
   label,
+  link,
 }: {
   icon: React.ReactNode;
   label: string;
+  link?: string;
 }) {
   return (
-    <button
+    <a
       className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-mono transition-colors"
       style={{ color: colors.accent }}
+      href={link}
     >
       {icon}
       {label}
-    </button>
+    </a>
   );
 }
