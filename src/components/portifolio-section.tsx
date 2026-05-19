@@ -157,6 +157,8 @@ function ActionButton({
       className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-mono transition-colors"
       style={{ color: colors.accent }}
       href={link}
+      target="_blank"
+      rel="noopener noreferrer"
     >
       {icon}
       {label}
