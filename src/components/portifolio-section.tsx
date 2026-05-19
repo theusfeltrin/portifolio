@@ -12,6 +12,8 @@ interface Project {
   description: string;
   language: string;
   tags: string[];
+  liveLink?: string;
+  codeLink?: string;
 }
 
 export function PortfolioSection() {
@@ -132,11 +134,15 @@ function ProjectCard({ project }: ProjectCardProps) {
 
       {/* Actions */}
       <div className="flex gap-3">
-        <ActionButton icon={<FaGithub />} label={t('portfolio.actions.code')} />
+        <ActionButton
+          icon={<FaGithub />}
+          label={t('portfolio.actions.code')}
+          link={project.codeLink}
+        />
         <ActionButton
           icon={<FaArrowUpRightFromSquare />}
           label={t('portfolio.actions.live')}
-          link={t('portfolio.actions.liveLink')}
+          link={project.liveLink}
         />
       </div>
     </div>
