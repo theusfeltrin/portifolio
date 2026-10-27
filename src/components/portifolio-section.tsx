@@ -5,6 +5,7 @@ import {
   FaArrowUpRightFromSquare,
 } from 'react-icons/fa6';
 import { colors } from '../theme/colors';
+import { ApiPlayground } from './api-playground';
 
 interface Project {
   id: number;
@@ -51,6 +52,22 @@ export function PortfolioSection() {
           </h2>
         </div>
 
+        {/* API Playground */}
+        <div className="mb-12 md:mb-16">
+          <SubsectionTitle label={t('portfolio.playground.title')} />
+
+          <p
+            className="text-sm mb-6 leading-relaxed"
+            style={{ color: colors.muted }}
+          >
+            {t('portfolio.playground.description')}
+          </p>
+
+          <ApiPlayground />
+        </div>
+
+        <SubsectionTitle label={t('portfolio.repositories')} />
+
         {/* Project Grid */}
         <div className="space-y-4 md:grid md:grid-cols-2 md:gap-4 md:space-y-0">
           {projects.map((project) => (
@@ -59,6 +76,18 @@ export function PortfolioSection() {
         </div>
       </div>
     </section>
+  );
+}
+
+function SubsectionTitle({ label }: { label: string }) {
+  return (
+    <div className="flex items-center gap-3 mb-4 font-mono text-xs md:text-sm">
+      <span style={{ color: colors.comment }}>// {label}</span>
+      <span
+        className="h-px flex-1"
+        style={{ backgroundColor: colors.border }}
+      />
+    </div>
   );
 }
 

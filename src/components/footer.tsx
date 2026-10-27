@@ -14,7 +14,7 @@ export function Footer() {
             <span className="text-[#d4d4d4]">=</span>{' '}
             <span className="text-[#b5cea8]">{new Date().getFullYear()}</span>
             <span className="text-[#d4d4d4]">;</span>
-            <span className="text-[#6a9955] ml-2">// © Alex Morgan</span>
+            <span className="text-[#6a9955] ml-2">// © Matheus T. Feltrin</span>
           </div>
         </div>
       </div>

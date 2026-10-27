@@ -65,6 +65,63 @@
       "code": "Código",
       "live": "Live"
     },
+    "repositories": "repositórios",
+    "playground": {
+      "title": "transactions-api — playground",
+      "description": "Uma API REST de transações que desenvolvi, com autenticação por API key, idempotência, paginação e rate limit. As requisições daqui são reais: ao criar sua primeira transação, sua sessão recebe um identificador anônimo, sem login, e só você vê as transações dela.",
+      "endpoints": "Endpoints",
+      "group": "Transactions",
+      "endpointNames": {
+        "create": "Criar transação",
+        "list": "Listar transações",
+        "get": "Buscar transação"
+      },
+      "session": {
+        "active": "sessão anônima ativa",
+        "pending": "criado na 1ª transação"
+      },
+      "request": "Request",
+      "response": "Response",
+      "copy": "Copiar",
+      "copied": "Copiado!",
+      "send": "Enviar request",
+      "sending": "Enviando...",
+      "retryIn": "Tente novamente em {{seconds}}s",
+      "ready": "Pronto",
+      "loading": "Aguardando resposta...",
+      "networkError": "Erro de rede",
+      "placeholder": "Escolha um endpoint e clique em Enviar request.",
+      "tabs": {
+        "json": "json",
+        "preview": "preview"
+      },
+      "preview": {
+        "empty": "Nenhuma transação nesta sessão ainda.",
+        "total_one": "{{count}} transação",
+        "total_other": "{{count}} transações",
+        "inspect": "Abrir no GET /transactions/:id"
+      },
+      "placeholders": {
+        "description": "Depósito inicial",
+        "id": "uuid da transação"
+      },
+      "validation": {
+        "amount": "Informe um número maior que zero.",
+        "currency": "Use um código ISO 4217 de 3 letras (ex: BRL).",
+        "description": "Máximo de 255 caracteres.",
+        "metadata": "Precisa ser um objeto JSON válido.",
+        "page": "Inteiro maior ou igual a 1.",
+        "pageSize": "Inteiro entre 1 e 100.",
+        "id": "Informe o UUID de uma transação."
+      },
+      "errors": {
+        "NETWORK": "Não foi possível conectar à API. Ela pode estar fora do ar.",
+        "TRANSACTION_NOT_FOUND": "Transação não encontrada.",
+        "RATE_LIMIT_EXCEEDED": "Limite de requisições atingido. Tente novamente em {{seconds}}s.",
+        "UNAUTHORIZED": "API key inválida: verifique a configuração do ambiente.",
+        "INTERNAL_SERVER_ERROR": "Erro inesperado no servidor."
+      }
+    },
     "projects": [
       {
         "id": 1,

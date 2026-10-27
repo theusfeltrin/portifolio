@@ -65,6 +65,63 @@
       "code": "Code",
       "live": "Live"
     },
+    "repositories": "repositories",
+    "playground": {
+      "title": "transactions-api — playground",
+      "description": "A transactions REST API I built, featuring API key auth, idempotency, pagination and rate limiting. Requests sent from here are real: when you create your first transaction, your session gets an anonymous identifier, no login required, and only you can see its transactions.",
+      "endpoints": "Endpoints",
+      "group": "Transactions",
+      "endpointNames": {
+        "create": "Create transaction",
+        "list": "List transactions",
+        "get": "Get transaction"
+      },
+      "session": {
+        "active": "anonymous session active",
+        "pending": "created on 1st transaction"
+      },
+      "request": "Request",
+      "response": "Response",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "send": "Send request",
+      "sending": "Sending...",
+      "retryIn": "Try again in {{seconds}}s",
+      "ready": "Ready",
+      "loading": "Waiting for response...",
+      "networkError": "Network error",
+      "placeholder": "Pick an endpoint and hit Send request.",
+      "tabs": {
+        "json": "json",
+        "preview": "preview"
+      },
+      "preview": {
+        "empty": "No transactions in this session yet.",
+        "total_one": "{{count}} transaction",
+        "total_other": "{{count}} transactions",
+        "inspect": "Open in GET /transactions/:id"
+      },
+      "placeholders": {
+        "description": "Initial deposit",
+        "id": "transaction uuid"
+      },
+      "validation": {
+        "amount": "Enter a number greater than zero.",
+        "currency": "Use a 3-letter ISO 4217 code (e.g. USD).",
+        "description": "255 characters max.",
+        "metadata": "Must be a valid JSON object.",
+        "page": "Integer greater than or equal to 1.",
+        "pageSize": "Integer between 1 and 100.",
+        "id": "Enter a transaction UUID."
+      },
+      "errors": {
+        "NETWORK": "Could not reach the API. It may be offline.",
+        "TRANSACTION_NOT_FOUND": "Transaction not found.",
+        "RATE_LIMIT_EXCEEDED": "Rate limit reached. Try again in {{seconds}}s.",
+        "UNAUTHORIZED": "Invalid API key: check the environment configuration.",
+        "INTERNAL_SERVER_ERROR": "Unexpected server error."
+      }
+    },
     "projects": [
       {
         "id": 1,
