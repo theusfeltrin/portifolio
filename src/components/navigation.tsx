@@ -4,8 +4,13 @@ import { useTranslation } from 'react-i18next';
 import { colors } from '../theme';
 import logo from '../assets/logo-mf.png';
 
+const languages = [
+  { code: 'pt-BR', label: 'PT' },
+  { code: 'en', label: 'EN' },
+];
+
 export function Navigation() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
@@ -50,42 +55,63 @@ export function Navigation() {
           />
         </a>
 
-        {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-8">
-          {navItems.map((item, index) => (
-            <a
-              key={item.href}
-              href={item.href}
-              onClick={(e) => handleNavClick(e, item.href)}
-              className="font-mono text-sm transition-colors"
-              style={{ color: colors.muted }}
-            >
-              <span style={{ color: colors.accent }} className="mr-1">
-                0{index + 1}.
-              </span>
-              <span
-                onMouseEnter={(e) =>
-                  (e.currentTarget.style.color = colors.accent)
-                }
-                onMouseLeave={(e) =>
-                  (e.currentTarget.style.color = colors.muted)
-                }
+        <div className="flex items-center gap-4 md:gap-8">
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center gap-8">
+            {navItems.map((item, index) => (
+              <a
+                key={item.href}
+                href={item.href}
+                onClick={(e) => handleNavClick(e, item.href)}
+                className="font-mono text-sm transition-colors"
+                style={{ color: colors.muted }}
               >
-                {item.label}
-              </span>
-            </a>
-          ))}
-        </div>
+                <span style={{ color: colors.accent }} className="mr-1">
+                  0{index + 1}.
+                </span>
+                <span
+                  onMouseEnter={(e) =>
+                    (e.currentTarget.style.color = colors.accent)
+                  }
+                  onMouseLeave={(e) =>
+                    (e.currentTarget.style.color = colors.muted)
+                  }
+                >
+                  {item.label}
+                </span>
+              </a>
+            ))}
+          </div>
 
-        {/* Mobile Menu Button */}
-        <button
-          onClick={() => setIsMenuOpen((v) => !v)}
-          aria-label="Toggle menu"
-          className="md:hidden transition-colors"
-          style={{ color: colors.muted }}
-        >
-          {isMenuOpen ? <FaX size={20} /> : <FaList size={20} />}
-        </button>
+          {/* Language Select */}
+          <select
+            value={i18n.resolvedLanguage}
+            onChange={(e) => i18n.changeLanguage(e.target.value)}
+            aria-label={t('nav.language')}
+            className="rounded-sm px-2 py-1 font-mono text-sm cursor-pointer focus:outline-none"
+            style={{
+              backgroundColor: colors.bg,
+              border: `1px solid ${colors.border}`,
+              color: colors.text,
+            }}
+          >
+            {languages.map((lang) => (
+              <option key={lang.code} value={lang.code}>
+                {lang.label}
+              </option>
+            ))}
+          </select>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setIsMenuOpen((v) => !v)}
+            aria-label="Toggle menu"
+            className="md:hidden transition-colors"
+            style={{ color: colors.muted }}
+          >
+            {isMenuOpen ? <FaX size={20} /> : <FaList size={20} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Navigation */}
